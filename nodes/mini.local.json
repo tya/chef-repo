@@ -1,0 +1,22 @@
+{
+    "name": "mini.local",
+    "run_list": [
+        "recipe[tynet-workstation]"
+    ],
+    "normal": {
+         "vim_config": {
+            "owner": "ty",
+            "owner_group": "staff",
+            "config_file_path": "/Users/ty/.vim/vimrc",
+            "bundle_dir": "/Users/ty/.vim/bundle"
+        },
+        "tags": ['server']
+    }
+}
+
+
+
+
+
+
+

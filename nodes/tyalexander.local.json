@@ -1,0 +1,22 @@
+{
+    "name": "tyalexander.local",
+    "run_list": [
+        "recipe[tynet-workstation]"
+    ],
+    "normal": {
+         "vim_config": {
+            "owner": "tyalexander",
+            "owner_group": "staff",
+            "config_file_path": "/Users/tyalexander/.vim/vimrc",
+            "bundle_dir": "/Users/tyalexander/.vim/bundle"
+        },
+        "tags": []
+    }
+}
+
+
+
+
+
+
+

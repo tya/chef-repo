@@ -1,0 +1,14 @@
+# Download and install chef
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+# Clone chef repo
+pushd ~/Dropbox/repos/chef-repo 
+
+# Bootstrap Node 
+knife bootstrap --sudo -x user -P passwd -N name.local name.local
+
+# Add Cookbook
+#  1. pushd ~/Dropbox/repos/chef-repo/cookbooks
+#  2. clone https://github.com/alexandt/homebrew.git
+#  3. knife cookbook upload homebrew
+
