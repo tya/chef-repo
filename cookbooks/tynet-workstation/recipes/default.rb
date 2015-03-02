@@ -8,9 +8,9 @@
 #
 # Inspired by: https://gist.github.com/t-io/8255711
 
-node.default['homebrew']['formulas'] = [*node['sgdk']['formulas'][recipe_name]]
-node.default['homebrew']['casks'] = [*node['sgdk']['casks'][recipe_name]]
-node.default['homebrew']['taps'] = [*node['sgdk']['taps'][recipe_name]]
+node.default['homebrew']['formulas'] = [*node['tynet-workstation']['formulas']
+node.default['homebrew']['casks'] = [*node['tynet-workstation']['casks']
+node.default['homebrew']['taps'] = [*node['tynet-workstation']['taps']
 
 include_recipe 'chef-client::service'
 include_recipe 'build-essential::default'
