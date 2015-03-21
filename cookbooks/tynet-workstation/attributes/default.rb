@@ -8,7 +8,7 @@
 #
 # Inspired by: https://gist.github.com/t-io/8255711
 
-node['tynet-workstation']['formulas'] = %w(
+default['tynet-workstation']['formulas'] = %w{
   ack
   archey
   blueutil
@@ -47,12 +47,12 @@ node['tynet-workstation']['formulas'] = %w(
   zsh
   zsh-completions
   zsh-lovers
-)
+}
 
-node['tynet-workstation']['casks'] = %w(
+default['tynet-workstation']['casks'] = %w{
   chefdk
   hipchat
   tunnelblick
   vagrant
   virtualbox
-)
+}
